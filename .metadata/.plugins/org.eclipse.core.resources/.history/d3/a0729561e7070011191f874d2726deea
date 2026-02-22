@@ -1,0 +1,77 @@
+package main_class;
+
+import java.util.Scanner;
+
+public class Main {
+	
+	static Scanner scanner = new Scanner(System.in);
+	static double accountBalance = 0;
+	
+	public static void main(String[] args) {
+		
+		boolean start = true;
+		while(start) {
+			System.out.println("\n 1. Enter 1 to deposit \n 2. Enter 2 to withdraw \n 3. Enter 3 to check balance");
+			System.out.println("Enter your account number : ");
+			long accountNumber = scanner.nextLong();
+			System.out.println("enter your amount : ");
+			double amount = scanner.nextDouble();
+			int number = scanner.nextInt();
+			switch (number) {
+			case 1: {
+				depositMoney(accountNumber,amount);
+				break;
+			}
+			case 2:
+				withdrawMoney(accountNumber, amount);
+				break;
+			case 3:
+				checkBalance(accountNumber);
+				break;
+			default:
+				throw new IllegalArgumentException("Unexpected value: " + number);
+			}
+			System.out.println("Enter 1 to continue 0 to stop :");
+			if(start == false) {
+				System.exit(0);
+			}
+		}
+	}
+	
+	
+	
+	public static void depositMoney(long accountNumber, double amount) {
+		System.out.println("Enter the account Number to deposit : ");
+		accountNumber = scanner.nextLong();
+		System.out.println("Enter the amount to deposit : ");
+		amount = scanner.nextDouble();
+		
+		if(amount > 0) {
+			accountNumber += amount;
+			System.out.println(amount + " , deposited to your amount");
+		}
+		else {
+			System.out.println("amount should be greater than zero");
+		}
+	}
+	
+	
+	public static void withdrawMoney(long accountNumber, double amount) {
+		System.out.println("ENter the account number to withdraw :");
+		accountNumber = scanner.nextLong();
+		System.out.println("Enter the amount to be withdrawn :");
+		amount = scanner.nextDouble();
+		
+		if (accountBalance >= amount) {
+			System.out.println(amount + " , is withdrawn from your account");
+		}
+		else {
+			System.out.println("withdrawl amount must be less than balance");
+		}
+	}
+	
+	
+	public static void checkBalance(long accountNumber) {
+		System.out.println("account balance is :" + accountBalance);
+	}
+}

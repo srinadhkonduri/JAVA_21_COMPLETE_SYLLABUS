@@ -1,0 +1,125 @@
+package main_class;
+
+import java.math.BigDecimal;
+import java.util.Scanner;
+
+public class Main {
+
+    static Scanner scanner = new Scanner(System.in);
+
+    static long accountNumber = 1234567890L;
+    static BigDecimal accountBalance = BigDecimal.ZERO;
+
+    public static void main(String[] args) {
+
+        boolean start = true;
+
+        while (start) {
+
+            System.out.println("\n===== BANK MENU =====");
+            System.out.println("1. Deposit");
+            System.out.println("2. Withdraw");
+            System.out.println("3. Check Balance");
+            System.out.println("0. Exit");
+
+            int choice;
+
+            try {
+                choice = scanner.nextInt();
+            } catch (Exception e) {
+                System.out.println("Invalid input. Enter numbers only.");
+                scanner.nextLine(); // clear buffer
+                continue;
+            }
+
+            switch (choice) {
+
+                case 1:
+                    depositMoney();
+                    break;
+
+                case 2:
+                    withdrawMoney();
+                    break;
+
+                case 3:
+                    checkBalance();
+                    break;
+
+                case 0:
+                    start = false;
+                    System.out.println("Thank you for using our bank.");
+                    break;
+
+                default:
+                    System.out.println("Invalid option. Try again.");
+            }
+        }
+
+        scanner.close();
+    }
+
+    public static void depositMoney() {
+
+        System.out.println("Enter account number:");
+        long enteredAccount = scanner.nextLong();
+
+        if (enteredAccount != accountNumber) {
+            System.out.println("Invalid account number.");
+            return;
+        }
+
+        System.out.println("Enter amount to deposit:");
+        BigDecimal amount = scanner.nextBigDecimal();
+
+        if (amount.compareTo(BigDecimal.ZERO) <= 0) {
+            System.out.println("Amount must be greater than zero.");
+            return;
+        }
+
+        accountBalance = accountBalance.add(amount);
+
+        System.out.println("Deposit successful.");
+    }
+
+    public static void withdrawMoney() {
+
+        System.out.println("Enter account number:");
+        long enteredAccount = scanner.nextLong();
+
+        if (enteredAccount != accountNumber) {
+            System.out.println("Invalid account number.");
+            return;
+        }
+
+        System.out.println("Enter amount to withdraw:");
+        BigDecimal amount = scanner.nextBigDecimal();
+
+        if (amount.compareTo(BigDecimal.ZERO) <= 0) {
+            System.out.println("Amount must be greater than zero.");
+            return;
+        }
+
+        if (accountBalance.compareTo(amount) < 0) {
+            System.out.println("Insufficient balance.");
+            return;
+        }
+
+        accountBalance = accountBalance.subtract(amount);
+
+        System.out.println("Withdrawal successful.");
+    }
+
+    public static void checkBalance() {
+
+        System.out.println("Enter account number:");
+        long enteredAccount = scanner.nextLong();
+
+        if (enteredAccount != accountNumber) {
+            System.out.println("Invalid account number.");
+            return;
+        }
+
+        System.out.println("Current Balance: ₹" + accountBalance);
+    }
+}

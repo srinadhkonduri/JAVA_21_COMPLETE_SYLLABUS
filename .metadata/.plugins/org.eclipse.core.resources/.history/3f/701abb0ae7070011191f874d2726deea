@@ -1,0 +1,51 @@
+package main_class;
+
+import java.util.Scanner;
+
+public class Main {
+	
+	static Scanner scanner = new Scanner(System.in);
+	static double accountBalance = 0;
+	
+	public static void main(String[] args) {
+		
+		
+	}
+	
+	
+	
+	public static void depositMoney(long accountNumber, double amount) {
+		System.out.println("Enter the account Number to deposit : ");
+		accountNumber = scanner.nextLong();
+		System.out.println("Enter the amount to deposit : ");
+		amount = scanner.nextDouble();
+		
+		if(amount > 0) {
+			accountNumber += amount;
+			System.out.println(amount + " , deposited to your amount");
+		}
+		else {
+			System.out.println("amount should be greater than zero");
+		}
+	}
+	
+	
+	public static void withdrawMoney(long accountNumber, double amount) {
+		System.out.println("ENter the account number to withdraw :");
+		accountNumber = scanner.nextLong();
+		System.out.println("Enter the amount to be withdrawn :");
+		amount = scanner.nextDouble();
+		
+		if (accountBalance >= amount) {
+			System.out.println(amount + " , is withdrawn from your account");
+		}
+		else {
+			System.out.println("withdrawl amount must be less than balance");
+		}
+	}
+	
+	
+	public static void checkBalance(long accountNumber, int amount) {
+		System.out.println("account balance is :" + accountBalance);
+	}
+}

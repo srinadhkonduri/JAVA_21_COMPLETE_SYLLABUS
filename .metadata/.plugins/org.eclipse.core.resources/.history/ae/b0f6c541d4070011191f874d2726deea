@@ -1,0 +1,6 @@
+package examples_01;
+
+public class String_classes {
+
+	String string = new String();
+}
