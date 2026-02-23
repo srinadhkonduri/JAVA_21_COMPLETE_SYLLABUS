@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/java - 21 - yt.iml" filepath="$PROJECT_DIR$/.idea/java - 21 - yt.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_01_data_types_variables/module_01_data_types_variables.iml" filepath="$PROJECT_DIR$/module_01_data_types_variables/module_01_data_types_variables.iml" />
       <module fileurl="file://$PROJECT_DIR$/oops_in_java/oops_in_java.iml" filepath="$PROJECT_DIR$/oops_in_java/oops_in_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/static_default_methods_in_java/static_default_methods_in_java.iml" filepath="$PROJECT_DIR$/static_default_methods_in_java/static_default_methods_in_java.iml" />
     </modules>
   </component>
 </project>
