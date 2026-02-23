@@ -55,9 +55,18 @@ public class Student {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "address='" + address + '\'' +
+                ", id=" + id +
+                ", name='" + name + '\'' +
+                ", mobileNumber='" + mobileNumber + '\'' +
+                '}';
+    }
 
-    // DISPLAY METHODS
-    public void studentData(){
-        System.out.println(" student id : " + getId() + "\n" + " student name :" + getName() + "\n" + " mobile number :" + getMobileNumber() + "\n" + " address :" + getAddress());
+    @Override
+    public int hashCode() {
+        return super.hashCode();
     }
 }
