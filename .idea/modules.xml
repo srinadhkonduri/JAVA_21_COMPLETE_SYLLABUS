@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/Bank/Bank.iml" filepath="$PROJECT_DIR$/Bank/Bank.iml" />
       <module fileurl="file://$PROJECT_DIR$/arrays_in_java/arrays_in_java.iml" filepath="$PROJECT_DIR$/arrays_in_java/arrays_in_java.iml" />
       <module fileurl="file://$PROJECT_DIR$/constructors_in_java/constructors_in_java.iml" filepath="$PROJECT_DIR$/constructors_in_java/constructors_in_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/enums_in_java/enums_in_java.iml" filepath="$PROJECT_DIR$/enums_in_java/enums_in_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exception_handling_in_java/exception_handling_in_java.iml" filepath="$PROJECT_DIR$/exception_handling_in_java/exception_handling_in_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/functional_interfaces_in_java/functional_interfaces_in_java.iml" filepath="$PROJECT_DIR$/functional_interfaces_in_java/functional_interfaces_in_java.iml" />
       <module fileurl="file://$PROJECT_DIR$/implict_explict_type_casting/implict_explict_type_casting.iml" filepath="$PROJECT_DIR$/implict_explict_type_casting/implict_explict_type_casting.iml" />
       <module fileurl="file://$PROJECT_DIR$/implict_explict_typecasting/implict_explict_typecasting.iml" filepath="$PROJECT_DIR$/implict_explict_typecasting/implict_explict_typecasting.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java - 21 - yt.iml" filepath="$PROJECT_DIR$/.idea/java - 21 - yt.iml" />

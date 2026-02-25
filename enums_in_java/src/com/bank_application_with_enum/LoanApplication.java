@@ -44,6 +44,7 @@ public class LoanApplication {
         System.out.println("Interest Rate: " + selectedLoan.getInterestRate());
         System.out.println("Monthly EMI: " + emi);
 
+        // final amount is being stored into the double variable
         double finalAMount = (amount + emi);
 
         System.out.println("final amount : " + Math.round(finalAMount));
