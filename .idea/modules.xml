@@ -19,6 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/optional_classes/optional_classes.iml" filepath="$PROJECT_DIR$/optional_classes/optional_classes.iml" />
       <module fileurl="file://$PROJECT_DIR$/static_default_methods_in_java/static_default_methods_in_java.iml" filepath="$PROJECT_DIR$/static_default_methods_in_java/static_default_methods_in_java.iml" />
       <module fileurl="file://$PROJECT_DIR$/stream_api_most_important/stream_api_most_important.iml" filepath="$PROJECT_DIR$/stream_api_most_important/stream_api_most_important.iml" />
+      <module fileurl="file://$PROJECT_DIR$/threads___multi___threading/threads___multi___threading.iml" filepath="$PROJECT_DIR$/threads___multi___threading/threads___multi___threading.iml" />
     </modules>
   </component>
 </project>
